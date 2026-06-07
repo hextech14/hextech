@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: hextech14/hextech   # ← имя пользователя/репозиторий
   branch: main
+  auth_type: pkce          # ← важно для безопасности
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -13,4 +15,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Заголовок", name: "title", widget: "string"}
-      - {label: "Текст", name: "body", widget: "markdown"}
+      - {label: "Текст поста", name: "body", widget: "markdown"}
