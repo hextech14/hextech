@@ -6,44 +6,6 @@
   <title>Админка Hextech</title>
 </head>
 <body>
-  <!-- Подключаем Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-    // Эта функция добавит кнопку "Login with GitHub" и свяжет её с вашим OAuth-приложением
-    window.CMS_MANUAL_INIT = true;
-    (function() {
-      const initCMS = setInterval(function() {
-        if (window.CMS) {
-          clearInterval(initCMS);
-          window.CMS.init({
-            config: {
-              backend: {
-                name: "github",
-                repo: "hextech14/hextech",
-                branch: "main",
-                auth_type: "pkce",
-                open_authorization: true
-              },
-              media_folder: "images/uploads",
-              public_folder: "/images/uploads",
-              collections: [
-                {
-                  name: "posts",
-                  label: "Посты",
-                  folder: "_posts",
-                  create: true,
-                  slug: "{{slug}}",
-                  fields: [
-                    { label: "Заголовок", name: "title", widget: "string" },
-                    { label: "Текст поста", name: "body", widget: "markdown" }
-                  ]
-                }
-              ]
-            }
-          });
-        }
-      }, 100);
-    })();
-  </script>
 </body>
 </html>
