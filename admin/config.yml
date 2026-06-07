@@ -2,9 +2,6 @@ backend:
   name: github
   repo: hextech14/hextech
   branch: main
-  # Используем публичный OAuth-сервер
-  base_url: https://auth.decapcms.org
-  auth_endpoint: /auth/github
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
