@@ -2,10 +2,11 @@ backend:
   name: github
   repo: hextech14/hextech
   branch: main
-  client_id: Ov23liXgN87pkC7i6Npr
-  auth_type: pkce
-  open_authorization: true
+  # ЭТО ГЛАВНОЕ: указываем публичный сервер для авторизации
+  base_url: https://auth.decapcms.org
+  auth_endpoint: /auth/github
 
+# Остальные настройки остаются без изменений
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
