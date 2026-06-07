@@ -2,11 +2,8 @@ backend:
   name: github
   repo: hextech14/hextech
   branch: main
-  # ЭТО ГЛАВНОЕ: указываем публичный сервер для авторизации
-  base_url: https://auth.decapcms.org
-  auth_endpoint: /auth/github
+  auth_type: pkce
 
-# Остальные настройки остаются без изменений
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -17,5 +14,5 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Заголовок", name: "title", widget: "string"}
-      - {label: "Текст поста", name: "body", widget: "markdown"}
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Текст поста", name: "body", widget: "markdown" }
