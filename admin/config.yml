@@ -1,19 +1,20 @@
-backend:
-  name: github
-  repo: hextech14/hextech
-  branch: main
-  auth_type: pkce
-  open_authorization: true
+бэкэнд:
+  имя: гитхаб
+  репо: hextech14/hextech
+  ветвь: основной
+  идентификатор_клиента: Ov23liXgN87pkC7i6Npr
+  тип_аутентификации: пкче
+  открытая_авторизация: истинный
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+медиа_папка: "изображения/загрузки"
+публичная_папка: "/изображения/загрузки"
 
-collections:
-  - name: "posts"
-    label: "Посты"
-    folder: "_posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Заголовок", name: "title", widget: "string"}
-      - {label: "Текст поста", name: "body", widget: "markdown"}
+коллекции:
+  - имя: "посты"
+    этикетка: "Посты"
+    папка: "_посты"
+    создавать: истинный
+    слизень: "{{slug}}"
+    поля:
+      - {этикетка: "Заголовок", имя: "название", виджет: "струна"}
+      - {этикетка: "Текст поста", имя: "тело", виджет: "разметка"}
