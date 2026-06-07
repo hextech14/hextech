@@ -2,9 +2,8 @@ backend:
   name: github
   repo: hextech14/hextech
   branch: main
-  # ВАЖНО: явно указываем использовать GitHub OAuth
+  client_id: Ov23liXgN87pkC7i6Npr
   auth_type: pkce
-  # НЕ используем base_url и auth_endpoint — они не нужны
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
