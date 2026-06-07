@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: hextech14/hextech   # ← имя пользователя/репозиторий
+  repo: hextech14/hextech
   branch: main
-  auth_type: pkce          # ← важно для безопасности
+  auth_type: pkce
+  open_authorization: true
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
