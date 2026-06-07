@@ -1,8 +1,10 @@
 backend:
   name: github
-  repo: hextech14/hextech   # название вашего репозитория
+  repo: hextech14/hextech
   branch: main
-  auth_type: pkce           # Самый надежный метод аутентификации на сегодня
+  # ВАЖНО: явно указываем использовать GitHub OAuth
+  auth_type: pkce
+  # НЕ используем base_url и auth_endpoint — они не нужны
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
