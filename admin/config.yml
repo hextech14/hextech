@@ -2,7 +2,8 @@ backend:
   name: github
   repo: hextech14/hextech
   branch: main
-  auth_type: pkce
+  # Временно удаляем base_url, пока не настроим новый прокси
+  # base_url: https://your-oauth-service.onrender.com
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
