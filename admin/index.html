@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Админка</title>
+  <script>
+    // Простая защита паролем
+    var password = prompt('Введите пароль для доступа к админке:');
+    if (password !== '941612') {
+      window.location.href = '/';
+    }
+  </script>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>
